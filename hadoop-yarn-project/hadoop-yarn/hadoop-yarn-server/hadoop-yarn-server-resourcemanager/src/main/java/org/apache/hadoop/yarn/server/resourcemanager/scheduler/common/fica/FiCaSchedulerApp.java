@@ -1100,4 +1100,20 @@ public class FiCaSchedulerApp extends SchedulerApplicationAttempt {
       }
     }
   }
+
+  /*
+   * Overriding to appease findbugs
+   */
+  @Override
+  public int hashCode() {
+    return super.hashCode();
+  }
+
+  /*
+   * Overriding to appease findbugs
+   */
+  @Override
+  public boolean equals(Object o) {
+    return super.equals(o);
+  }
 }
